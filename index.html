@@ -5,6 +5,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    span.onda {
+      position: absolute;
+      border-radius: 50%;
+      transform: scale(0);
+      animation: onda 600ms linear;
+      background-color: rgba(16, 98, 145, 0.7);
+    }
+
+    @keyframes onda {
+      to {
+        transform: scale(4);
+        opacity: 0;
+      }
+    }
+  </style>
   <title>Programación reactiva con JavaScript</title>
 </head>
 
@@ -214,15 +230,13 @@
   <!-- ejercicio 9 -->
   <h2>Barra de carga</h2>
   <article>
-    <div id="barra"
-      style="
+    <div id="barra" style="
         width: 100%;
         height: 100%;
         background-image: url('https://raw.githubusercontent.com/LinkedInLearning/desafio-programacion-prog-funcional-JavaScript-2432306/09_f/09_barra_carga/solucion/Autumn%20leaves_LIL_134164.jpg');
         background-repeat: repeat-y;
         background-size: 50% auto;
-        "
-    >Cargando...</div>
+        ">Cargando...</div>
   </article>
   <hr>
 
@@ -239,8 +253,16 @@
       <li style="list-style: none; border: 2px solid salmon; height: 150px; margin: 5px 0;"></li>
       <li style="list-style: none; border: 2px solid salmon; height: 150px; margin: 5px 0;"></li>
       <li style="list-style: none; border: 2px solid salmon; height: 150px; margin: 5px 0;"></li>
-  </ul>
+    </ul>
   </article>
+  <hr>
+
+  <!-- ejercicio 11 -->
+  <article>
+    <button id="boton_onda">Generar Onda!</button>
+  </article>
+  <hr>
+
   <script src="https://unpkg.com/@reactivex/rxjs@6.6.0/dist/global/rxjs.umd.js"></script>
   <script src="./01-marcador-de-tiempo.js"></script>
   <script src="./02-buscando-el-elemento-perdido.js"></script>
@@ -252,6 +274,7 @@
   <script src="./08-crece-y-explota.js"></script>
   <script src="./09-barra-carga.js"></script>
   <script src="./10-scroll-infinito.js"></script>
+  <script src="./11-crear-onda.js"></script>
 
 </body>
 
