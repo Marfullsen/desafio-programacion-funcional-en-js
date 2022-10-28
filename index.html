@@ -1,20 +1,163 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Programación reactiva con JavaScript</title>
 </head>
+
 <body>
   <h1>Programación reactiva con JavaScript</h1>
   <hr>
+
+  <!-- ejercicio 1 -->
   <h2>Marcador de tiempo</h2>
-  <article >
+  <article>
     <span id="resultado"></span>
   </article>
   <hr>
+
+  <!-- ejercicio 2 -->
+  <h2>Buscando el elemento perdido</h2>
+  <p>Buscando: '<span id="buscado"></span>'</p>
+  <article id="elementos">
+    <div>
+      <div>
+        <div>
+          <div>
+            <div>
+              Elemento2
+              <div>
+                <div>
+                  <div>
+                    <div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        Elemento1
+        <div>
+          <div>
+            <div>
+              <div></div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    Elemento4
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <div>
+                      Elemento8
+                      <div></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <div></div>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <div>
+                      <div></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <div>
+                        <div>Elemento5</div>
+                      </div>
+                    </div>
+                    <div>
+                      <div>
+                        Elemento3
+                        <div>
+                          <div>
+                            <div>
+                              <div></div>
+                            </div>
+                          </div>
+                          <div>
+                            <div>
+                              <div></div>
+                            </div>
+                          </div>
+                          <div>
+                            Elemento0
+                            <div>
+                              <div></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <div>
+                        <div>Elemento9</div>
+                      </div>
+                    </div>
+                    <div></div>
+                  </div>
+                  <div>
+                    <div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    Elemento7
+                    <div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </article>
+  <p>¿Encontrado? <span id="encontrado_span"></span></p>
   <script src="https://unpkg.com/@reactivex/rxjs@6.6.0/dist/global/rxjs.umd.js"></script>
   <script src="./01-marcador-de-tiempo.js"></script>
+  <script src="./02-buscando-el-elemento-perdido.js"></script>
 </body>
 </html>
